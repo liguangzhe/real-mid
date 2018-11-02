@@ -14,14 +14,20 @@ class InsertUserTest extends TestCase
      *
      * @return void
      */
-    public function testExample(){
+    public function testExample()
+    {
 
         $user = new User();
-        $user->name = 'Guangzhe Li';
-        $user->email = 'gl279@njit.edu';
-        $user->password = '90909';
+        $user->name = 'my name';
+        $user->email = 'my email';
+        $user->password = 'my password';
+        $user->email_verified_at = 'my time';
         $user->remember_token = 'my remember_token';
         $this->assertTrue($user->save());
     }
+
+
+
+
 
 }
